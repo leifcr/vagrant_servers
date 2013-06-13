@@ -27,3 +27,6 @@ All these require my chef repository.
 
 I use chef solo when working on vagrant and ordinary chef for production
 
+
+Contact:
+leif@bitelm.com or twitter: @leifcr
