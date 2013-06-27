@@ -30,12 +30,12 @@ Vagrant.configure("2") do |config|
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
   # your network.
-#  if /darwin/ === Vagrant::Util::Platform.platform
-#    config.vm.network :public_network, :bridge => "en1: Wi-Fi (AirPort)"
-  #elsif Vagrant::Util::Platform.winows?
-#  else
-#    config.vm.network :public_network
-#  end
+  if /darwin/ === Vagrant::Util::Platform.platform
+    config.vm.network :public_network, :bridge => "en1: Wi-Fi (AirPort)"
+#  elsif Vagrant::Util::Platform.winows?
+  else
+    config.vm.network :public_network
+  end
 
   # config.vm.network :hostonly
 
